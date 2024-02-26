@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.Forget">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/back2"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Forget Password"
+            android:textColor="@color/black"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="70dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:counterMaxLength="20"
+        app:startIconDrawable="@drawable/email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/forgetEmail"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/inputEmail"
+            android:inputType="textEmailAddress"
+            android:maxHeight="70dp"
+            android:minHeight="60dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="70dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:counterMaxLength="20"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Enter New Password"
+            android:inputType="textPassword"
+            android:maxHeight="70dp"
+            android:minHeight="60dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="70dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="5dp"
+        app:boxCornerRadiusBottomStart="5dp"
+        app:boxCornerRadiusTopEnd="5dp"
+        app:boxCornerRadiusTopStart="5dp"
+        app:counterMaxLength="20"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordCnfrm"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="@string/confirmPassword"
+            android:inputType="textPassword"
+            android:maxHeight="70dp"
+            android:minHeight="60dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/forgetBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/button"
+        android:contentDescription="Sign up"
+        android:elevation="10dp"
+        android:text="Update Password"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/illustration" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/itemView"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.App"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_shadowElevation="4dp"
+        android:padding="0dp"
+        app:neumorph_shapeType="flat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <!-- Title, secondary and supporting text -->
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Your Title Goes Here"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/secondaryTitle"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start"
+                    android:text="Rs. 0.0"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                    android:textColor="#f56a4d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
